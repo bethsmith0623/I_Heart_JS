@@ -1,7 +1,9 @@
 class Bookshelf {
 	constructor() {
 		this.favoriteBooks = [];
-	}
+  }
+  // TODO: define methods `addFavoriteBook(..)`
+	// and `printFavoriteBooks()`
   addFavoriteBook(bookName) {
     if (!bookName.includes("Great")) {
       this.favoriteBooks.push(bookName);
@@ -16,6 +18,7 @@ class Bookshelf {
 }
 
 function loadBooks(theBookshelf) {
+  // TODO: call fakeAjax( .. );
   fakeAjax(BOOK_API, function onBooks(bookNames){
     for (let bookName of bookNames){
       theBookshelf.addFavoriteBook(bookName);
