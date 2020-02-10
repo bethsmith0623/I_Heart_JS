@@ -93,7 +93,9 @@ if (musicians <= 0) {
 }
 
 /* Murder Mystery */
-/* Since this might be your first time playing a murder mystery, we've simplified things quite a bit to make it easier. Here's what we know! In this murder mystery there are:
+/* Since this might be your first time playing a murder mystery, we've simplified 
+things quite a bit to make it easier. Here's what we know! In this murder mystery 
+there are:
 
 four rooms: the ballroom, gallery, billiards room, and dining room,
 four weapons: poison, a trophy, a pool stick, and a knife,
@@ -117,6 +119,9 @@ sets the value of solved to true if the value of room matches the suspect's room
 Afterwards, use this template to print a message to the console if the mystery was solved:
 
 __________ did it in the __________ with the __________! */
+
+/* Solution NOTE: This problem is in part 8. In this course the use of the logical 
+operators (&&, ||, !) aren't introduced until part 9, but it accepted my solution */
 
 var room = "ballroom";  // ballroom, gallery, billiards rooom, dining room
 var suspect = "Mr. Kalehoff"; // Mr. Parkes, Ms, Van Cleve, Mrs. Sparr, Mr. Kalehoff
