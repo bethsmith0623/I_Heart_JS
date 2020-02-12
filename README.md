@@ -20,3 +20,8 @@ These exercises are from a Udacity course titled "Intro to JavaScript".
 * lesson_5.js - a review of functions
 * lesson_6.js - a review of arrays
 * lesson_7.js - a review of objects
+
+
+*__Data_Structures_Algorithms__*
+
+This section is for notes and practice work from the Udemy course created by Andrei Neagoie titled "Master the Coding Interview: Data Structures + Algorithms".
