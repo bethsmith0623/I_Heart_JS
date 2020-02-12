@@ -255,4 +255,73 @@ if ((shirtWidth >= 18 && shirtWidth < 20) &&
 }
 
 //Ternary Operators
+//conditional ? (if condition is true) : (if condition is false)
+
+var isGoing = true;
+var color;
+if (isGoing) {
+  color = "green";
+} else {
+  color = "red";
+}
+console.log(color);
+
+/* with ternary operators, the 8 lines above become the shortened 
+3 lines below */
+
+var isGoing = true;
+var color = isGoing ? "green" : "red";
+console.log(color);
+
+//Navigating the Food Chain
+/* Write a series of ternary statements that sets the variable category equal to:
+
+"herbivore" if an animal eats plants
+"carnivore" if an animal eats animals
+"omnivore" if an animal eats plants and animals
+undefined if an animal doesn't eat plants or animals
+Use the eatsPlants and eatsAnimals variables to test your code. */
+
+var eatsPlants = false;
+var eatsAnimals = true;
+
+var category = (eatsPlants && !eatsAnimals) ? "herbivore" :
+  (!eatsPlants && eatsAnimals) ? "carnivore" :
+  (eatsPlants && eatsAnimals) ? "omnivore" : "";
+
+console.log(category);
+
+//Switch Statements
+/* only work in situations like this where you have a bunch of if 
+statements based on the value of the same variable. This code below 
+is repetitve and could benefit from the use of a switch statement */
+var option = 3;
+
+if (option === 1) {
+  console.log("You selected option 1.");
+} else if (option === 2) {
+  console.log("You selected option 2.");
+} else if (option === 3) {
+  console.log("You selected option 3.");
+} else if (option === 4) {
+  console.log("You selected option 4.");
+} else if (option === 5) {
+  console.log("You selected option 5.");
+} else if (option === 6) {
+  console.log("You selected option 6.");
+}
+
+/* Here's what it looks like using a switch statement. Be sure
+to include the break statement, otherwise it will return all cases
+after the case your variable is assigned to. This is called 
+"falling-through". */
+var option = 3;
+switch (option) {
+  case 1: console.log("You selected option 1."); break;
+  case 2: console.log("You selected option 2."); break;
+  case 3: console.log("You selected option 3."); break;
+  case 4: console.log("You selected option 4."); break;
+  case 5: console.log("You selected option 5."); break;
+  case 6: console.log("You selected option 6."); break;
+}
 
