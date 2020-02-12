@@ -16,3 +16,7 @@ This was a set of exercises from Kyle Simpson's "Getting Started with JavaScript
 
 These exercises are from a Udacity course titled "Intro to JavaScript".
 * lesson_3.js - a review on conditionals, including logical operators, ternary operators, and switch statements.
+* lesson_4.js - a review of loops
+* lesson_5.js - a review of functions
+* lesson_6.js - a review of arrays
+* lesson_7.js - a review of objects
