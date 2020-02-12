@@ -15,4 +15,4 @@ This was a set of exercises from Kyle Simpson's "Getting Started with JavaScript
 *__Basics_Part_2__*
 
 These exercises are from a Udacity course titled "Intro to JavaScript".
-* lesson_3.js - a review on conditionals.
+* lesson_3.js - a review on conditionals, including logical operators, ternary operators, and switch statements.

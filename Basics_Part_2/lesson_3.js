@@ -171,4 +171,88 @@ if (checkBalance !== true) {
   console.log("Your balance is negative. Please contact bank.");  
 }
 
+//Ice Cream
+
+/*Ice cream is one of the most versatile desserts on the planet because 
+it can be done up so many different ways. Using logical operators, write 
+a series of complex logical expressions that prints only if the following 
+conditions are true:
+
+if flavor is set to vanilla or chocolate and
+if vessel is set to cone or bowl and
+if toppings is set to sprinkles or peanuts
+If the above conditions are true, then print out:
+
+I'd like two scoops of __________ ice cream in a __________ with __________.
+Fill in the blanks with the flavor of the ice cream, vessel, and toppings. 
+For example,
+I'd like two scoops of vanilla ice cream in a cone with peanuts. */
+
+//Solution code
+
+var flavor = "strawberry";  //vanilla, chocolate
+var vessel = "cone";  //cone, bowl
+var toppings = "cookies";  //sprinkles, peanuts
+
+if ((flavor === "vanilla" || flavor === "chocolate") &&
+    (vessel === "cone" || vessel === "bowl") &&
+      (toppings === "sprinkles" || toppings === "peanuts")) {
+      console.log("I'd like two scoops of " + flavor +
+    " ice cream in a " + vessel + " with " + toppings + ".");
+}
+
+//What Do I Wear?
+
+/*Using if/else statements, create a series of logical expressions 
+that logs the size of a t-shirt based on the measurements of:
+ *   - shirtWidth
+ *   - shirtLength
+ *   - shirtSleeve
+ *
+ * Use the chart above to print out one of the following correct 
+ * values: (Sizing chart given in problem)
+ *   - S, M, L, XL, 2XL, or 3XL
+ */
+
+// change the values of `shirtWidth`, `shirtLength`, and `shirtSleeve` to test your code
+var shirtWidth = 23;
+var shirtLength = 30;
+var shirtSleeve = 8.71;
+
+//Solution
+
+if ((shirtWidth >= 18 && shirtWidth < 20) &&
+  (shirtLength >= 28 && shirtLength < 29) &&
+  (shirtSleeve >= 8.13 && shirtSleeve < 8.38)) {
+    console.log("S");
+} else if (
+  (shirtWidth >= 20 && shirtWidth < 22) &&
+  (shirtLength >= 29 && shirtLength < 30) &&
+  (shirtSleeve >= 8.38 && shirtSleeve < 8.63)) {
+    console.log("M");
+} else if (
+  (shirtWidth >= 22 && shirtWidth < 24) &&
+  (shirtLength >= 30 && shirtLength < 31) &&
+  (shirtSleeve >= 8.63 && shirtSleeve < 8.88)) {
+    console.log("L");
+}  else if (
+  (shirtWidth >= 24 && shirtWidth < 26) &&
+  (shirtLength >= 31 && shirtLength < 33) &&
+  (shirtSleeve >= 8.88 && shirtSleeve < 9.63)) {
+    console.log("XL");
+}  else if (
+  (shirtWidth >= 26 && shirtWidth < 28) &&
+  (shirtLength >= 33 && shirtLength < 34) &&
+  (shirtSleeve >= 9.63 && shirtSleeve < 10.13)) {
+    console.log("2XL");
+} else if (
+  (shirtWidth >= 28 && shirtWidth < 30) &&
+  (shirtLength >= 34 && shirtLength < 35) &&
+  (shirtSleeve >= 10.13 && shirtSleeve < 11)) {
+    console.log("3XL");
+} else {
+  console.log("N/A");
+}
+
+//Ternary Operators
 
