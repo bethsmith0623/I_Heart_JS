@@ -93,3 +93,79 @@ function anotherFunChallenge(input) {
 }
 
 //BIG-O(4 + 5n)  //* of O(4 + 7n if the * are counted)
+
+//Simplifying Big O - The Four Rules
+/* from best to worst:
+O(log n), O(1), O(n), O(n log n), O(n^2), O(2^n), O(n!)
+
+1. Worst Case
+    Always consider the worst case 
+    - i.e. O(1) and O(n) - comparing these 2, O(n) has more operations
+    and is therefore less efficient, the worst case
+    (Can make O(n) slightly more efficient by inserting a break in the
+    loop - however worst case is if our item is last - the break won't
+    matter)
+2. Remove Constants
+    If you counted and had something like this O(1 + n/2 + 100)
+    Since we are dropping the constants it will be O(n) as we get
+    larger and larger numbers, the +101 and /2 are much less
+    significant
+3. Different terms for inputs **tricky part***/
+
+function compressBoxesTwice(boxes, boxes2) {
+  boxes.forEach(function(boxes) {
+    console.log(boxes);
+  });
+  boxes2.forEach(function(boxes) {
+    console.log(boxes);
+  });
+}
+/*
+not still O(n) due to the 2 arguments being passed into the 
+compressBoxesTwice function
+so this one would be O(a + b)
+
+(Nested Loops)
+May get an interview question like this:
+Log all pairs of array  */
+
+const boxes = ['a','b','c','d','e'];
+
+function logAllPairsOfArray(array) {
+  for(let i = 0; i < array.length; i++) {
+    for(let j = 0; j < array.length; j++) {
+      console.log(array[i], array[j])
+    }
+  }
+}
+logAllPairsOfArray(boxes);
+
+//returns aa, ab, ac, ad, ae, ba, bb, bc, bd, be, etc.
+/* a good rule of thumb is that if you see nested loops,
+we use multiplication. So this becomes O(n^2)
+O(n^2) --> Quadratic Time (pretty slow)
+
+4. Drop Non Dominant Terms
+two loops added with a nested loop inside one like the 
+function below
+O(n + n^2) this means that the n^2 is dominant so we drop
+the n. This also goes back to rule 1 because n^2 is worse than
+a single n.
+Nested loops are not the best way to handle functions for 
+scalability and Big O.
+*/
+
+function printAllNumbersThenAllPairSums(numbers) {
+  console.log("These are the numbers:");
+  numbers.forEach(function(number) {
+    console.log(number);
+  });
+  console.log("And these are their sums:");
+  numbers.forEach(function(firstNumber) {
+    numbers.forEach(function(secondNumber){
+      console.log(firstNumber + secondNumber);
+    });
+  });
+}
+printAllNumbersThenAllPairSums([1,2,3,4,5]);
+
